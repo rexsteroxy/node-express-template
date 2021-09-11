@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
 });
 
 server.listen(port, () => {
-  console.log(`Bleautech Gateway is running on http://localhost:${port}`);
+  console.log(`node project starter template is running on http://localhost:${port}`);
 });
 
 module.exports = app;

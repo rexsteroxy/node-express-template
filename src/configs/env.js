@@ -7,11 +7,6 @@ const schema = Joi.object({
     .valid("development", "production", "test", "provision")
     .default("development"),
   PORT: Joi.number().required(),
-  BT_AUTHENTICATION_MS_BASE_URL: Joi.string().uri().required(),
-  BT_ADMIN_MS_BASE_URL: Joi.string().uri().required(),
-  BT_SCHOOOL_MS_BASE_URL: Joi.string().uri().required(),
-  BT_TEACHER_MS_BASE_URL: Joi.string().uri().required(),
-  BT_STUDENT_MS_BASE_URL: Joi.string().uri().required(),
   SECRET: Joi.string().required(),
 })
   .unknown()

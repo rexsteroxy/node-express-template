@@ -1,0 +1,28 @@
+  /route: # path of the collection from your endpoint
+    get: # endpoint request type (post request)
+      tags: # Tag property
+        - STARTER # Value of the tag
+      summary: node starter project
+      produces:
+        - application/json
+      parameters: # request parameters
+        - in: header
+          name: authorization
+          description: access token
+          default: serial eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZXhzdGVyb3h5MjJAZ21haWwuY29tIiwiZXhwIjoxNjU1NDEzOTE1fQ.6sYi1TS4HAz0wnXpjDcqziP3BkRP6EeasgQTaKfQQh8
+          required: true
+        - name: pageNumber # name of parameter passed
+          in: query # parameters in the path
+          required: true 
+          default: 1
+          type: number
+
+        - name: userId # name of parameter passed
+          in: query # parameters in the path
+          required: true
+          default: a3fa45e1-ff7a-49e2-bda0-59568b490889
+          type: string
+     
+      responses: # server responses
+        201:
+          description: node starter project

@@ -4,10 +4,9 @@ const { port } = require("./env");
 
 const swagger = {
   swaggerDefinition: {
-    host: `${process.env.BT_GATEWAY_MS_BASE_URL}/auth`,
     info: {
       version: "2.0.0",
-      title: "BleauTech School Service API",
+      title: "Node Project Template",
       contact: { name: "Amadi Austin Chukwuemeka" },
       servers: [{ url: `http://localhost:${port}` }],
     },
